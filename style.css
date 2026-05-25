@@ -47,7 +47,7 @@ body {
 
 #hero-content p {
     color: #8A8A8A;
-    font-size: 18;
+    font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     margin-bottom: 30px;
@@ -68,7 +68,8 @@ body {
     border: 2px solid #872BFF;
     transition: all .5s;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #FFFFFF;
     color: black;
 }
@@ -91,14 +92,16 @@ body {
 }
 
 /*Skill-section-Design*/
-#skill{
+#skill {
     margin-bottom: 150px;
 }
-.heading{
+
+.heading {
     margin-bottom: 60px;
     text-align: center;
 }
-.heading h4{
+
+.heading h4 {
     letter-spacing: 4px;
     font-size: 24px;
     color: #6A14D1;
@@ -106,16 +109,19 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
 }
-.heading h2{
+
+.heading h2 {
     font-size: 44px;
 }
-.card-box{
+
+.card-box {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     margin-bottom: 60px;
 }
-.card{
+
+.card {
     background-color: white;
     /*border: 1px solid red;*/
     padding: 40px;
@@ -124,108 +130,351 @@ body {
     box-shadow: 0 4px 4px #00000025;
     border-radius: 16px;
 }
-.card *{
+
+.card * {
     margin-bottom: 20px;
 }
-.card h3{
+
+.card h3 {
     font-size: 22px;
     font-weight: bold;
 }
-.card p{
+
+.card p {
     font-size: 16px;
     color: #0D1321;
 }
-.card a{
+
+.card a {
     color: black;
     font-weight: bold;
 }
 
 /*Project-Section-Design*/
-#projects{
+#projects {
     margin-bottom: 150px;
 }
-.project-card{
+
+.project-card {
     padding: 48px;
     background-color: #FFFFFF;
     border: 1px solid #872BFF;
     border-radius: 20px;
     display: flex;
-    gap:20px;
+    gap: 20px;
     align-items: center;
     margin-bottom: 60px;
-    
+
 }
-.project-img img{
+
+.project-img img {
     width: 400px;
     border-radius: 20px;
 }
-.project-content h3{
-    font-size: 30px;    
+
+.project-content h3 {
+    font-size: 30px;
 }
-.project-content p{
-    color:#0E0E0E70
+
+.project-content p {
+    color: #0E0E0E70
 }
-.project-content *{
+
+.project-content * {
     margin-bottom: 20px;
 }
 
 /*Experience-Section-Design*/
-#experience{
+#experience {
     margin-bottom: 150px;
 }
-.company-card{
+
+.company-card {
     display: flex;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
 }
-.brands{
+
+.brands {
     padding: 40px;
     background-color: white;
     box-shadow: 0 4px 4px #00000025;
     border-radius: 16px;
 }
-.btn-container{
+
+.btn-container {
     text-align: center;
     padding: 60px 0;
 }
 
 /*Footer-Section-Design*/
-.footer{
+.footer {
     background-color: white;
-    color:black;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
     margin-top: 50px;
     flex-wrap: wrap;
-    border-top: 1.5px solid #6A14D1;  
+    border-top: 1.5px solid #6A14D1;
 }
-.footer-text{
-    width: 409px;
+
+.footer-text {
+    width: 412px;
     height: 20px;
     font-size: 16px;
     letter-spacing: 1px;
-    color:#5B5757;
+    color: #5B5757;
 }
-.social-icon{
+
+.social-icon {
     gap: 15px;
     display: flex;
     align-items: center;
 }
-.social-icon a{
+
+.social-icon a {
     margin-left: 15px;
     text-decoration: none;
 }
-.social-icon img{
+
+.social-icon img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     transition: 0.3s;
     cursor: pointer;
 }
-.social-icon img:hover{
+
+.social-icon img:hover {
     transform: scale(1.2);
     box-shadow: 0 0 10px #6A14D1;
+}
+
+
+
+
+/*Responsive Design*/
+
+/*Laptop Device 1025px-1200px*/
+@media screen and (max-width:1200px) {
+
+    #hero-content h1 {
+        font-size: 46px;
+    }
+
+    #hero-image img {
+        max-width: 450px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
+
+
+/*Tablet Device 769px-1024px*/
+@media screen and (max-width:1024px) {
+
+    #hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero-content {
+        padding-bottom: 0;
+    }
+
+    #hero-content h1 {
+        font-size: 40px;
+    }
+
+    #hero-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .hero-btn {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card-box {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-img img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+}
+
+
+/*Android Device Landscape 569px-768px*/
+@media screen and (max-width:768px) {
+
+    .container {
+        width: 92%;
+    }
+
+    #hero {
+        margin-bottom: 100px;
+    }
+
+    #skill {
+        margin-bottom: 100px;
+    }
+
+    #projects {
+        margin-bottom: 100px;
+    }
+
+    #experience {
+        margin-bottom: 100px;
+    }
+
+    #hero-content h1 {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    #hero-content p {
+        font-size: 16px;
+    }
+
+    .heading h2 {
+        font-size: 32px;
+    }
+
+    .heading h4 {
+        font-size: 18px;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+
+    .project-content h3 {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 14px 24px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-text {
+        width: 100%;
+    }
+
+}
+
+
+/*Android Device Portrait 320px-568px*/
+@media screen and (max-width:568px) {
+
+    .container {
+        width: 95%;
+    }
+
+    #hero {
+        margin-bottom: 70px;
+        padding-top: 20px;
+    }
+
+    #hero-content h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    #hero-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .hero-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .heading {
+        margin-bottom: 40px;
+    }
+
+    .heading h2 {
+        font-size: 24px;
+    }
+
+    .heading h4 {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .project-content h3 {
+        font-size: 22px;
+    }
+
+    .project-content p {
+        font-size: 14px;
+    }
+
+    .brands {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .brands img {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .social-icon {
+        justify-content: center;
+    }
+
+    .social-icon a {
+        margin-left: 0;
+    }
+
 }
